@@ -1,6 +1,14 @@
 public class RockPaperScissors {
 
- 
+    /*@FIXME: you can declare class fields instead of using comments. Like this:
+
+    @FIXME: private static int STEN = 1;
+    @FIXME: private static int SAX = 2;
+    @FIXME: private static int PÅSE = 3;
+    ... or even better give them English names so that your future Indian and Chinese colleagues can read your code
+    */
+
+    //@TODO: Ctrl+Alt+L
     public static void game() {
 
    boolean game = true;     
@@ -13,7 +21,6 @@ public class RockPaperScissors {
         do{ int datorVal = Fist.datorVal();
             int spelarVal = Player.userInput();
             
-
 
             if (spelarVal == 1 ){//STEN
                 if (datorVal == 1 ){//STEN
@@ -66,7 +73,7 @@ public class RockPaperScissors {
                 }
         }
 
-        
+        //@FIXME: you have an empty loop: while(condition);
         } while(Player.score < 3 && Fist.dataScore < 3);
 
         String play = Player.playAgain();
